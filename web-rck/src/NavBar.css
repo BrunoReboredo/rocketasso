@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #99C6DA;
+    padding: 10px 20px;
+    height: 60px;
+    width: 100%;
+
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que quede por encima de otros elementos */
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+ }
+  
+  .navbar-logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+
+    flex: 1; /* Permite que los enlaces se alineen correctamente */
+    justify-content: flex-start; /* Alinea las opciones a la izquierda */
+    display: flex;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    color: #04174A;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
