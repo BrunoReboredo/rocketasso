@@ -50,4 +50,42 @@
   .navbar-links a:hover {
     text-decoration: underline;
   }
+
+  .dropdown {
+    position: relative; /* Necesario para posicionar el menú desplegable */
+  }
+  
+  .dropdown-menu {
+    display: none; /* El menú está oculto por defecto */
+    position: absolute;
+    top: 100%; /* Coloca el menú justo debajo de "Competición" */
+    left: 0;
+    background-color: #99C6DA;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    padding: 8px 20px;
+    display: block; /* Asegura que el enlace ocupe todo el ancho del item */
+    padding: 8px 0;
+  }
+  
+  .dropdown-menu li a {
+    color: #04174A;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mostrar el menú cuando el usuario pasa el ratón sobre el item */
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Muestra el menú cuando se pasa el ratón */
+  }
   
