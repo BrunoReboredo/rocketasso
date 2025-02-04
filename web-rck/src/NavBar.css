@@ -13,6 +13,24 @@
     z-index: 1000; /* Asegura que quede por encima de otros elementos */
   }
 
+  /* Estilo general de los elementos del menú */
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  color: #04174A;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none; /* Para que los links no tengan subrayado */
+  cursor: pointer;
+}
+
+/* Efecto hover para todas las opciones */
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: underline;
+}
+
   .navbar-logo {
     display: flex;
     align-items: center;
@@ -27,7 +45,7 @@
   .navbar-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: -100px;
     margin: 0;
     padding: 0;
 
@@ -37,37 +55,52 @@
   }
   
   .navbar-links li {
-    display: inline;
-  }
-  
-  .navbar-links a {
-    color: #04174A;
-    text-decoration: none;
+    list-style: none;
+    display: flex; /* Asegura que todos los elementos se comporten igual */
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px; /* Tamaño uniforme */
     font-weight: bold;
-    font-size: 16px;
   }
   
-  .navbar-links a:hover {
+  .navbar-links a, 
+  .dropdown-item {
+    text-decoration: none;
+    color: #04174A;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar-links a:hover, 
+  .dropdown-item:hover {
     text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   .dropdown {
-    position: relative; /* Necesario para posicionar el menú desplegable */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .dropdown-menu {
-    display: none; /* El menú está oculto por defecto */
+    display: none;
     position: absolute;
-    top: 100%; /* Coloca el menú justo debajo de "Competición" */
-    left: 0;
+    top: 100%; /* Aparece justo debajo */
+    left: 50%; /* Se alinea con el centro del contenedor padre */
+    transform: translateX(-50%); /* Corrige la posición */
     background-color: #99C6DA;
-    padding: 10px 0;
+    padding: 5px 0; /* Reduce espacio interno */
     list-style: none;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 150px;
+    width: max-content; /* Se ajusta al contenido */
+    min-width: 160px; /* Tamaño mínimo */
+    text-align: center; /* Centrar texto */
   }
-  
   .dropdown-menu li {
     display: block;
     padding: 8px 20px;
@@ -76,8 +109,9 @@
   }
   
   .dropdown-menu li a {
-    color: #04174A;
     font-size: 14px;
+    display: block;
+    text-align: center;
   }
   
   .dropdown-menu li a:hover {
@@ -123,4 +157,13 @@
   
   .submenu-menu li a:hover {
     text-decoration: underline;
+  }
+
+  .dropdown-arrow {
+    width: 20px;  /* Reduce el ancho de la flecha */
+    height: auto; /* Mantiene la proporción */
+    margin-left: 5px; /* Espacio entre el texto y la flecha */
+    vertical-align: middle; /* Alinea con el texto */
+    position: relative;
+    top: 0px; /* Ajusta la posición vertical */
   }

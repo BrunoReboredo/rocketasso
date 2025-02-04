@@ -1,7 +1,9 @@
 import './Navbar.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './assets/RCK_Logo_Cua_RenderNeg.png'; // Asegúrate de que la ruta es correcta
+import logo from './assets/RCK_Logo_Cua_RenderNeg.png';
+import arrowDown from './assets/Flecha_abajo.png';
+import arrowRight from './assets/Flecha_derecha.png';
 
 const Navbar = () => {
 
@@ -31,7 +33,9 @@ const Navbar = () => {
           onMouseEnter={handleDropdownToggle}
           onMouseLeave={handleDropdownToggle}
         >
-          <Link to="/competition">Competición</Link>
+          <div className="dropdown-item">Competición
+          <img src={arrowDown} alt="Flecha abajo" className="dropdown-arrow" />
+          </div>
           {isDropdownOpen && (
             <ul className="dropdown-menu">
               <li
@@ -39,7 +43,8 @@ const Navbar = () => {
                 onMouseEnter={handleSubmenuToggle}
                 onMouseLeave={handleSubmenuToggle}
               >
-                <Link to="/competition/season2">RCK Season 2</Link>
+                <Link to="/competition/season2">RCK Season 2
+                <img src={arrowDown} alt="Flecha abajo" className="dropdown-arrow" /></Link>
                 {isSubmenuOpen && (
                   <ul className="submenu-menu">
                     <li><Link to="/competition/season2/calendar">Calendario</Link></li>
