@@ -43,8 +43,9 @@ const Navbar = () => {
                 onMouseEnter={handleSubmenuToggle}
                 onMouseLeave={handleSubmenuToggle}
               >
-                <Link to="/competition/season2">RCK Season 2
-                <img src={arrowDown} alt="Flecha abajo" className="dropdown-arrow" /></Link>
+                <div className="dropdown-item">RCK Season 2
+                <img src={arrowRight} alt="Flecha abajo" className="dropdown-arrow" />
+                </div>
                 {isSubmenuOpen && (
                   <ul className="submenu-menu">
                     <li><Link to="/competition/season2/calendar">Calendario</Link></li>
