@@ -89,3 +89,38 @@
     display: block; /* Muestra el menú cuando se pasa el ratón */
   }
   
+  .submenu {
+    position: relative;
+  }
+
+  .submenu-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Hace que el submenú aparezca a la derecha */
+    background-color: #99C6DA;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 160px;
+  }
+
+  .submenu:hover .submenu-menu {
+    display: block;
+  }
+  
+  /* Estilos para los enlaces del submenú */
+  .submenu-menu li {
+    padding: 8px 20px;
+  }
+  
+  .submenu-menu li a {
+    color: #04174A;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .submenu-menu li a:hover {
+    text-decoration: underline;
+  }
