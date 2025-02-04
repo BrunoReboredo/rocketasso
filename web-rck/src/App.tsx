@@ -5,7 +5,10 @@ import Home from './pages/Home';
 import News from './pages/News';
 import MeetUs from './pages/MeetUs';
 import GetInTouch from './pages/GetInTouch';
-//import Competition from './pages/Competition';
+import Calendar from './pages/Calendar';
+import Classification from './pages/Classification';
+import HallOfFame from './pages/HallOfFame';
+import OverallClassification from './pages/OverallClassification';
 
 function App() {
   return (
@@ -16,6 +19,11 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/meet-us" element={<MeetUs />} />
         <Route path="/contact" element={<GetInTouch />} />
+        <Route path="/competition/season2/calendar" element={<Calendar/>}/>
+        <Route path="/competition/season2/classification" element={<Classification/>}/>
+        <Route path="/competition/hall-of-fame" element={<HallOfFame/>}/>
+        <Route path="/competition/overall-classification" element={<OverallClassification/>}/>
+
       </Routes>
     </Router>
   );
