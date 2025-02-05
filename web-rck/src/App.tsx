@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './nav/Navbar';
+import Footer from './footer/Footer';
 import Home from './pages/Home';
 import News from './pages/News';
 import MeetUs from './pages/MeetUs';
@@ -23,8 +24,8 @@ function App() {
         <Route path="/competition/season2/classification" element={<Classification/>}/>
         <Route path="/competition/hall-of-fame" element={<HallOfFame/>}/>
         <Route path="/competition/overall-classification" element={<OverallClassification/>}/>
-
       </Routes>
+      <Footer />
     </Router>
   );
 }
