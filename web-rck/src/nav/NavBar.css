@@ -50,7 +50,7 @@
     padding: 0;
 
     flex: 1; /* Permite que los enlaces se alineen correctamente */
-    justify-content: flex-start; /* Alinea las opciones a la izquierda */
+    justify-content: center; /* Alinea las opciones a la izquierda */
     display: flex;
   }
   

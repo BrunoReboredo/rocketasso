@@ -1,0 +1,11 @@
+.content {
+    padding-top: 60px; /* Espacio para el navbar */
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que el texto del h1 esté centrado */
+    width: 100%;
+  }
+  
