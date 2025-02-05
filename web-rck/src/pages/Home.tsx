@@ -1,11 +1,9 @@
-import Navbar from '../nav/Navbar'; // Asegúrate de importar correctamente el componente Navbar
+
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
-      <h1>Bienvenido a la Página de Inicio</h1>
-      {/* Aquí puedes agregar más contenido para la página de inicio */}
+    <div className="content">
+      <h1>Frase motivacional de bienvenida</h1>
     </div>
   );
 };

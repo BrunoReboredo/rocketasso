@@ -1,0 +1,84 @@
+.news-header {
+    text-align: center;
+    margin-top: 60px; /* Ajusta el espacio debajo del navbar fijo */
+    margin-bottom: 1rem;
+  }
+  
+  .news-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem; /* Espacio entre h1 y h2 */
+  }
+  
+  .news-header h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem; /* Espacio entre h2 y la lista de noticias */
+  }
+  
+  .news-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    gap: 1.5rem; /* Espacio entre los cuadros */
+    padding: 0 1rem; /* Espacio lateral para las noticias */
+  }
+  
+  .news-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .news-box {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .news-box:hover {
+    transform: scale(1.05); /* Efecto de hover */
+  }
+  
+  .news-box h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Ajustes para la pantalla */
+  @media (max-width: 1024px) {
+    .news-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .news-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-list {
+      grid-template-columns: 1fr; /* 1 columna para pantallas muy pequeñas */
+    }
+  }
+  
+  /* Asegurarse que el contenido no se solape con el navbar */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    padding-top: 60px; /* Deja espacio para el navbar fijo */
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  

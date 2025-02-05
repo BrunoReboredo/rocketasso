@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './nav/Navbar';
 import Footer from './footer/Footer';
@@ -13,22 +13,27 @@ import OverallClassification from './pages/OverallClassification';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/meet-us" element={<MeetUs />} />
-        <Route path="/contact" element={<GetInTouch />} />
-        <Route path="/competition/season2/calendar" element={<Calendar/>}/>
-        <Route path="/competition/season2/classification" element={<Classification/>}/>
-        <Route path="/competition/hall-of-fame" element={<HallOfFame/>}/>
-        <Route path="/competition/overall-classification" element={<OverallClassification/>}/>
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="app-container">
+      <Router>
+        <Navbar />
+        <div className="content">
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/meet-us" element={<MeetUs />} />
+            <Route path="/contact" element={<GetInTouch />} />
+            <Route path="/competition/season2/calendar" element={<Calendar />} />
+            <Route path="/competition/season2/classification" element={<Classification />} />
+            <Route path="/competition/hall-of-fame" element={<HallOfFame />} />
+            <Route path="/competition/overall-classification" element={<OverallClassification />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
 export default App;
+
 
