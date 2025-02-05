@@ -1,4 +1,5 @@
-import Navbar from '../Navbar';
+import Navbar from '../nav/Navbar';
+
 const Calendar = () => {
   return (
     <div>

@@ -1,9 +1,9 @@
 import './Navbar.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './assets/RCK_Logo_Cua_RenderNeg.png';
-import arrowDown from './assets/Flecha_abajo.png';
-import arrowRight from './assets/Flecha_derecha.png';
+import logo from '../assets/RCK_Logo_Cua_RenderNeg.png';
+import arrowDown from '../assets/Flecha_abajo.png';
+import arrowRight from '../assets/Flecha_derecha.png';
 
 const Navbar = () => {
 

@@ -1,4 +1,4 @@
-import Navbar from '../Navbar'; // Asegúrate de importar correctamente el componente Navbar
+import Navbar from '../nav/Navbar'; // Asegúrate de importar correctamente el componente Navbar
 
 const News = () => {
   return (

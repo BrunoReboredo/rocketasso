@@ -92,19 +92,19 @@
     top: 100%; /* Aparece justo debajo */
     left: 50%; /* Se alinea con el centro del contenedor padre */
     transform: translateX(-50%); /* Corrige la posición */
-    background-color: #99C6DA;
-    padding: 5px 0; /* Reduce espacio interno */
+    background-color: #BEB4E6;
+    padding: 0; /* Reduce espacio interno */
     list-style: none;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: max-content; /* Se ajusta al contenido */
     min-width: 160px; /* Tamaño mínimo */
-    text-align: center; /* Centrar texto */
+    text-align: center; 
   }
   .dropdown-menu li {
-    display: block;
+    display: flex;
+    width: 100%;
     padding: 8px 20px;
-    display: block; /* Asegura que el enlace ocupe todo el ancho del item */
     padding: 8px 0;
   }
   
@@ -132,7 +132,7 @@
     position: absolute;
     top: 0;
     left: 100%; /* Hace que el submenú aparezca a la derecha */
-    background-color: #99C6DA;
+    background-color: #BEB4E6;
     padding: 10px 0;
     list-style: none;
     border-radius: 5px;
@@ -159,11 +159,12 @@
     text-decoration: underline;
   }
 
+  /*Flecha menu competicon vertical*/
   .dropdown-arrow {
-    width: 20px;  /* Reduce el ancho de la flecha */
-    height: auto; /* Mantiene la proporción */
-    margin-left: 5px; /* Espacio entre el texto y la flecha */
-    vertical-align: middle; /* Alinea con el texto */
+    width: 20px;  
+    height: auto; 
+    margin-left: 5px; 
+    vertical-align: middle; 
     position: relative;
-    top: 0px; /* Ajusta la posición vertical */
+    top: 0px;
   }

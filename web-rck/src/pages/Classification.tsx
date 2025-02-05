@@ -1,5 +1,5 @@
-import Navbar from '../Navbar';
-const Clasification = () => {
+import Navbar from '../nav/Navbar';
+const Classification = () => {
   return (
     <div>
       <Navbar />
@@ -9,4 +9,4 @@ const Clasification = () => {
   );
 };
 
-export default Clasification;
+export default Classification;
