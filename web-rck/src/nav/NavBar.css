@@ -45,15 +45,12 @@
   .navbar-links {
     list-style: none;
     display: flex;
-    gap: 0px;
+    gap: 10px;
     margin: 0;
     padding: 0;
-
-    flex: 1; /* Permite que los enlaces se alineen correctamente */
-    justify-content: center; /* Alinea las opciones a la izquierda */
-    display: flex;
+    flex: 1;
+    justify-content: left;
   }
-  
   .navbar-links li {
     list-style: none;
     display: flex; /* Asegura que todos los elementos se comporten igual */
@@ -167,4 +164,21 @@
     vertical-align: middle; 
     position: relative;
     top: 0px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    padding-right: 45px;
+    align-items: center;
+    margin-left: auto; 
+  }
+  
+  .social-icons svg {
+    color: #ffffff; /* Color blanco por defecto */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons svg:hover {
+    color: #1da1f2; /* Cambia el color en hover */
   }
