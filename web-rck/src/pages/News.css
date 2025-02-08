@@ -7,6 +7,7 @@
   margin-top: 10px; /* Espacio debajo del navbar */
   margin-bottom: 1rem;
   margin: 0 auto;
+  margin-left: 320px;
 }
 
 .news-header h1 {
@@ -25,20 +26,21 @@
 
 /* Línea divisoria ocupa toda la pantalla */
 .news-divider {
-  width: 90%;
+  width: 100%;
   height: 2px;
   background-color: #ffd700;
   justify-content: center;
   border: none;
   margin: 20px auto;
+  margin-left: 320px;
 }
 
 /* Contenedor de noticias */
 .news-list {
   width: 100%;
-
+  margin-left: 320px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.1rem;
   padding:  0 0.3rem;
   max-width: 1500px; /* Limita el ancho máximo */
