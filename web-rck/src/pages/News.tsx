@@ -9,7 +9,7 @@ const News = () => {
     { id: 3, title: "Grandes jugadas de la semana", image: "/images/news3.jpg", link: "/noticia-3" },
     { id: 4, title: "Entrevista con el MVP", image: "/images/news4.jpg", link: "/noticia-4" },
     { id: 5, title: "Arsene si lees esto me debes 20 euros", image: "/images/news5.jpg", link: "/noticia-5" },
-    { id: 6, title: "JAJAJAJAJAJAJAJJA", image: "/images/news6.jpg", link: "/noticia-6" },
+    { id: 6, title: "JAJAJAJAJAJAJAJJA", image: "/assets/Flecha_abajo.png", link: "/noticia-6" },
     { id: 7, title: "Testing", image: "/assets/RCK_Logo_Cua_RenderNeg.jpg", link: "/noticia-7" },
   ];
 
