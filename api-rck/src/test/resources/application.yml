@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/bbdd-rck
+    username: root
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 20
+      minimum-idle: 5
+      auto-commit: true
+      connection-test-query: SELECT 1
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Cambiar a 'update', 'create', o 'none' según el entorno
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        show_sql: true  # Poner 'true' si quieres ver las consultas SQL en la consola
