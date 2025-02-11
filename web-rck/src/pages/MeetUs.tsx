@@ -1,11 +1,25 @@
-import Navbar from '../nav/Navbar'; // Asegúrate de importar correctamente el componente Navbar
+import React from "react";
+import Navbar from "../nav/Navbar"; 
+import Footer from "../footer/Footer"; 
+import "./MeetUs.css";
 
-const MeetUs = () => {
+
+const MeetUs: React.FC = () => {
   return (
-    <div>
+<div className="meet-us-container">
       <Navbar />
-      <h1>Bienvenido a la Página de Conócenos</h1>
-      {/* Aquí puedes agregar más contenido para la página de conócenos */}
+      
+      <div className="section">
+        <div className="question-box">¿QUIÉNES SOMOS?</div>
+        <div className="answer-box">EXPLICACIÓN</div>
+      </div>
+
+      <div className="section">
+        <div className="question-box">¿QUIÉN TRABAJA EN LA RCK?</div>
+        <div className="answer-box">LISTA NOMBRES - ROLES</div>
+      </div>
+
+      <Footer />
     </div>
   );
 };
