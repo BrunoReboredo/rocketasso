@@ -1,19 +1,23 @@
 .news-header {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: grid;
+  width: 100vw;
+  
   text-align: center;
-  margin-top: 10px; /* Espacio debajo del navbar */
+  margin-top: 5px; /* Espacio debajo del navbar */
   margin-bottom: 1rem;
-  margin: 0 auto;
-  margin-left: 320px;
+}
+
+.div.content {
+  width: 100%;
 }
 
 .news-header h1 {
   font-size: 4rem;
   margin-bottom: 0.5rem;
-  text-align: center;
+  text-align:  center;
   color: #FFFAF0;
 }
 
@@ -32,19 +36,19 @@
   justify-content: center;
   border: none;
   margin: 20px auto;
-  margin-left: 320px;
 }
 
 /* Contenedor de noticias */
 .news-list {
-  width: 100%;
-  margin-left: 320px;
+  width: 100vw; /* Ocupar todo el ancho de la ventana */
+  height: 100%; /* Ocupar todo el alto disponible */
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño flexible */
   gap: 1.1rem;
-  padding:  0 0.3rem;
-  max-width: 1500px; /* Limita el ancho máximo */
+  padding: 1rem;
+  box-sizing: border-box; /* Evita que el padding afecte el tamaño */
 }
+
 
 /* Cada noticia como un enlace */
 .news-item {
@@ -58,13 +62,14 @@
   flex-direction: column;
   justify-content: space-between; /* Distribuye los elementos */
   align-items: center;
+  justify-content: center;
   background-color: #F0FFFF;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
-  height: 220px; /* Ajusta según necesidad */
+  height: 225px; /* Ajusta según necesidad */
 }
 
 .news-box:hover {
@@ -89,23 +94,4 @@
   font-size: 1.2rem;
   text-align: center;
   color: #333;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .news-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .news-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .news-list {
-    grid-template-columns: 1fr;
-  }
 }
