@@ -60,7 +60,7 @@ const Navbar = () => {
     </li>
     <li><Link to="/news">Noticias</Link></li>
     <li><Link to="/meet-us">Conócenos</Link></li>
-    <li><Link to="/contact">Contacta con nosotros</Link></li>
+    <li><Link to="/contact">Contacto</Link></li>
   </ul>
 
   {/* Mueve los iconos aquí */}

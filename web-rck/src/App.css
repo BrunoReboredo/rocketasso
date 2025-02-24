@@ -71,11 +71,14 @@ h1 {
   text-align: center; /* Centra el texto */
 }
 
-/* Añadir fondo en la aplicación */
+/* Añadir fondo en la aplicación*/
 body {
   background-image: url('assets/fondo.png');
-  background-size: cover; /* La imagen cubre toda la pantalla */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  height: 100%; /* Asegura que el fondo cubra toda la altura */
+
+  background-size: cover; /* Ajusta el tamaño para que cubra todo el ancho */
+  background-position: center top; /* Inicia desde arriba */
+  background-repeat: repeat-y; /* Se repite verticalmente */
+  background-attachment: fixed; /* Efecto parallax */
+  min-height: 100vh; /* Asegura que cubra toda la pantalla */
 }
+
