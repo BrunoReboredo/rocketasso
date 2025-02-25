@@ -1,4 +1,8 @@
 package com.rocketasso.api_rck.model;
 
-public interface HallOfFameRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface HallOfFameRepo extends JpaRepository<HallOfFameEntity, Integer> {
 }

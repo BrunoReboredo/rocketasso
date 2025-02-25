@@ -2,91 +2,37 @@ package com.rocketasso.api_rck.model;
 
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "TInfoClubsS2")
+@Getter
+@Setter
 public class InfoClubS2Entity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @Column(nullable = false)
+    private Integer id;
+
+    @Column(name = "Nombre", nullable = false, length = 50)
     private String nombre;
-    @Column(nullable = false)
+
+    @Column(name = "Abreviatura", nullable = false, length = 4)
     private String abreviatura;
-    @Column(nullable = false)
+
+    @Column(name = "Puntuacion", nullable = false)
     private int puntuacion;
-    @Column(nullable = false)
+
+    @Column(name = "CorreoElectronico", nullable = false, length = 50)
     private String correoElectronico;
-    @Column(nullable = false)
+
+    @Column(name = "Manager", nullable = false, length = 50)
     private String manager;
-    @Column(nullable = false)
+
+    @Column(name = "X", length = 30)
     private String x;
-    @Column(nullable = false)
+
+    @Column(name = "TikTok", length = 30)
     private String tikTok;
-
-    // Getters y setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getAbreviatura() {
-        return abreviatura;
-    }
-
-    public void setAbreviatura(String abreviatura) {
-        this.abreviatura = abreviatura;
-    }
-
-    public int getPuntuacion() {
-        return puntuacion;
-    }
-
-    public void setPuntuacion(int puntuacion) {
-        this.puntuacion = puntuacion;
-    }
-
-    public String getCorreoElectronico() {
-        return correoElectronico;
-    }
-
-    public void setCorreoElectronico(String correoElectronico) {
-        this.correoElectronico = correoElectronico;
-    }
-
-    public String getManager() {
-        return manager;
-    }
-
-    public void setManager(String manager) {
-        this.manager = manager;
-    }
-
-    public String getX() {
-        return x;
-    }
-
-    public void setX(String x) {
-        this.x = x;
-    }
-
-    public String getTikTok() {
-        return tikTok;
-    }
-
-    public void setTikTok(String tikTok) {
-        this.tikTok = tikTok;
-    }
 }

@@ -1,12 +1,9 @@
 package com.rocketasso.api_rck.model;
 
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-@Entity
-@Table(name = "TInfoClubsS2")
+@Repository
 public interface InfoClubS2Repo extends JpaRepository<InfoClubS2Entity, Integer> {
 
 }
