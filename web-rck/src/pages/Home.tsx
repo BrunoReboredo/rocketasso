@@ -1,5 +1,5 @@
 import "./Home.css";
-import videoBg from '../assets/Trailer_final.mp4';
+import videoBg from '../assets/Video_prueba.mp4';
 
 const Home = () => {
   return (
