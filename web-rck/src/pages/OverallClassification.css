@@ -1,0 +1,24 @@
+.classification-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .classification-table th,
+  .classification-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .classification-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .club-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  
