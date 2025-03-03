@@ -7,7 +7,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table(name = "TClubsHistoricos")
+@Table(name = "tclubshistoricos")
 public class ClubsHistoricosEntity {
 
     @Id
@@ -32,8 +32,10 @@ public class ClubsHistoricosEntity {
     @Column(name = "PartidosPerdidos", nullable = false)
     private int partidosPerdidos;
 
-    @Transient  // Como es calculado en SQL, no se almacena en la entidad
-    private int diferenciaPartidos;
+
+    @Column(name = "DiferenciaPartidos")
+    private Integer diferenciaPartidos;
+
 
 }
 

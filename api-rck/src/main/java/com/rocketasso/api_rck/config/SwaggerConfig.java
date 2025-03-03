@@ -16,7 +16,7 @@ public class SwaggerConfig {
     Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.rocketasso.api_rck"))
+                .apis(RequestHandlerSelectors.basePackage("com.rocketasso.api_rck.config"))
                 .paths(PathSelectors.any())
                 .build();
     }

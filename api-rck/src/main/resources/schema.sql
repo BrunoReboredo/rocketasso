@@ -29,7 +29,7 @@ CREATE TABLE TClasificacionS2 (
 
 -- drop table TClasificacionS2;
 
-CREATE TABLE TClubsHistoricos (
+CREATE TABLE tclubshistorico (
                                   Id INT PRIMARY KEY AUTO_INCREMENT,
                                   ClubId INT UNIQUE,
                                   Nombre VARCHAR(50) NOT NULL,
@@ -39,6 +39,8 @@ CREATE TABLE TClubsHistoricos (
                                   PartidosPerdidos INT(5) NOT NULL,
                                   DiferenciaPartidos INT(5) as (PartidosGanados-PartidosPerdidos)
 );
+-- INSERT INTO tclubs_historicos (club_id, diferencia_partidos, logo, nombre, partidos_ganados, partidos_perdidos, puntuacion)
+-- VALUES (1, 0, 'logo.png', 'Equipo A', 10, 5, 30);
 
 -- drop table tclubshistoricos;
 
