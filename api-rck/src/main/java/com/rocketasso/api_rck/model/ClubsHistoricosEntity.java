@@ -37,5 +37,19 @@ public class ClubsHistoricosEntity {
     private Integer diferenciaPartidos;
 
 
+    @Override
+    public String toString() {
+        return "ClubsHistoricosEntity{" +
+                "id=" + id +
+                ", clubId=" + clubId +
+                ", nombre='" + nombre + '\'' +
+                ", logo='" + logo + '\'' +
+                ", puntuacion=" + puntuacion +
+                ", partidosGanados=" + partidosGanados +
+                ", partidosPerdidos=" + partidosPerdidos +
+                ", diferenciaPartidos=" + diferenciaPartidos +
+                '}';
+    }
+
 }
 
