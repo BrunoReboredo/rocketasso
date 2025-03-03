@@ -1,0 +1,173 @@
+[33mcommit f708fc4b11fa0742328d5e057030423319aa82d5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 25 20:46:22 2025 +0100
+
+    .
+
+[33mcommit 061fdecf1703e5c672508c859d5030276a3739aa[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 25 20:27:34 2025 +0100
+
+    Añadir video a LFS
+
+[33mcommit cf4432328c62145d2eefcfd317881064aa9fd731[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 25 20:21:20 2025 +0100
+
+    avances martes (falta el video)
+
+[33mcommit 8e752ca0aa54540c78ded998209b8545cf9d62d2[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 25 19:48:12 2025 +0100
+
+    add el video a git lfs
+
+[33mcommit 7c444549ba52286b9307413fd7e59375518cca6c[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 25 19:44:31 2025 +0100
+
+    avances martes 25/02/2025
+
+[33mcommit cf08387467e17817ef932502d82bca0b3b4ce34c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 25 19:26:07 2025 +0100
+
+    Api conectada a la bbdd en local
+
+[33mcommit 81a15d8d58dce5dd28d2cc030dbd9d2aa7854c8f[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 24 19:56:22 2025 +0100
+
+    Avances lunes 24-02-2025, tras terminar de ajustar noticias, empezamos con home
+
+[33mcommit 62e8fe6a0b1e62f91dd25801d49953d787a91bcb[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 24 18:34:19 2025 +0100
+
+    cambios en el diseño de noticias
+
+[33mcommit af8c5d2c4444196d884292024fd2151a9cb94efb[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 11 19:04:51 2025 +0100
+
+    avances martes
+
+[33mcommit 46e7029a027e9ca1359195c063aa07171cdbd307[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 10 19:54:45 2025 +0100
+
+    avances lunes
+
+[33mcommit 0155f969320414db4dcc76310f0df94abdad3b47[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 10 18:27:08 2025 +0100
+
+    proyecot api reemplazado
+
+[33mcommit c70a2cdbf292093c8359b5b92e4310f5aee72bdb[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 10 13:58:36 2025 +0100
+
+    creado proyecto de la api (vacio)
+
+[33mcommit 446e06f5b73808a0872101b0c047194918464a09[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Sat Feb 8 19:20:14 2025 +0100
+
+    Pagina de Noticias estrucutrada
+
+[33mcommit ac451d995fd86d38e46ac2b3fb2d98e63f0ec79b[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Sat Feb 8 19:01:54 2025 +0100
+
+    acvances sabado
+
+[33mcommit f5ae0e541aeb892fb5ce627edde3a54e722a893e[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Fri Feb 7 18:32:47 2025 +0100
+
+    añadidos los iconos de las redes sociales a la navbar (diseños funcionales, pendiente de revision)
+
+[33mcommit 80ff3613b1427331c03921db629aed532582954f[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Wed Feb 5 18:44:07 2025 +0100
+
+    fin por hoy
+
+[33mcommit e027920bd69cb4fe858337af726c85a26a41e739[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Wed Feb 5 17:28:44 2025 +0100
+
+    arreglado problema en el navBar y empezado testeo de news
+
+[33mcommit fcff533667e1202391dc637cd49871ac941c43e2[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Wed Feb 5 13:54:38 2025 +0100
+
+    añadido footer
+
+[33mcommit 02abdb1021f8e80e30805962641ae191ca8d3c93[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Wed Feb 5 13:43:01 2025 +0100
+
+    arreglos navbar
+
+[33mcommit ccf99624e64d4b75e1f9cc5a46ca2e7ced0a6376[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 4 17:42:03 2025 +0100
+
+    scrits creasdos y patheados
+
+[33mcommit 0a1f359ad7894c6df27e56d601c6df2ced1b318f[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 4 16:43:06 2025 +0100
+
+    estrucutura navbar completada (falta diseño)
+
+[33mcommit 82c47c3978fe69a6fe9395271efcc75f51d4af19[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 4 15:06:14 2025 +0100
+
+    avances navbar competicion
+
+[33mcommit 03185b34c484bf6c1149240fd2e669ea668cc5ea[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Tue Feb 4 14:15:30 2025 +0100
+
+    acutralizacion en el apartado de competicion
+
+[33mcommit 58cd16035186efbcb4d4114d1ec0f8bd30fe541b[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 3 20:10:11 2025 +0100
+
+    Implementado el menu despegable de competicion
+
+[33mcommit b61056507ed6746844baca5242300abd2d24e673[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 3 19:51:18 2025 +0100
+
+    NavBar funcional, a falta del apartado de competiciones
+
+[33mcommit 1970b661263460b758149ec1498a3091af5ea84a[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 3 19:36:47 2025 +0100
+
+    NavNar implementado
+
+[33mcommit a41278da3a304060f7e6d7d9aad260abaf80bc89[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Feb 3 18:32:23 2025 +0100
+
+    proyecto react vacio
+
+[33mcommit 5165616525fed20ff27788c0193b8f173020309b[m
+Author: BrunoReboredo <brurebo@gmail.com>
+Date:   Mon Jan 27 12:19:41 2025 +0100
+
+    proyecto seteado
+
+[33mcommit 90bde0ab10559bc4559a656fb156dfd7f2705e0f[m
+Author: BrunoReboredo <135270299+BrunoReboredo@users.noreply.github.com>
+Date:   Tue Apr 9 18:48:57 2024 +0200
+
+    Initial commit
