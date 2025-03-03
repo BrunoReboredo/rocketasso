@@ -21,6 +21,12 @@ public class ClasificacionS2Entity {
     @Column(name = "NombreClub", length = 50, nullable = false)
     private String nombreClub;
 
+    @Column(name = "Abreviatura", nullable = false, length = 4)
+    private String abreviatura;
+
+    @Column(name = "Logo", nullable = false, length = 255)
+    private String logo;
+
     @Column(name = "Posicion", nullable = false)
     private int posicion;
 
@@ -30,8 +36,10 @@ public class ClasificacionS2Entity {
     @Column(name = "PartidosPerdidos", nullable = false)
     private int partidosPerdidos;
 
-    @Column(name = "DiferenciaPartidos", insertable = false, updatable = false)
-    private int diferenciaPartidos;
+    @Transient
+    public int getDiferenciaPartidos() {
+        return this.partidosGanados - this.partidosPerdidos;
+    }
 
     @Column(name = "Puntos", nullable = false)
     private int puntos;

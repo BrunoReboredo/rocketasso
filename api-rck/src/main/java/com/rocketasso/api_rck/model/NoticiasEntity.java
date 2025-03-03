@@ -13,10 +13,13 @@ import java.time.LocalDateTime;
 public class NoticiasEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     @Column(name = "Titulo", nullable = false, length = 100)
     private String titulo;
+
+    @Column(name = "Foto", length = 255)
+    private String foto;
 
     @Column(name = "Contenido", nullable = false, columnDefinition = "TEXT")
     private String contenido;
@@ -28,5 +31,4 @@ public class NoticiasEntity {
     protected void onCreate() {
         fechaPublicacion = LocalDateTime.now();
     }
-
 }

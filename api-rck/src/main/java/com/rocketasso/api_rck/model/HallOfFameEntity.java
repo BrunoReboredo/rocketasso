@@ -16,6 +16,9 @@ public class HallOfFameEntity {
     @Column(name = "Nombre", nullable = false, length = 50)
     private String nombre;
 
+    @Column(name = "Logo", nullable = false, length = 255)
+    private String logo;
+
     @Column(name = "Abreviatura", nullable = false, length = 4)
     private String abreviatura;
 

@@ -1,39 +1,39 @@
 package com.rocketasso.api_rck.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "TClubsHistoricos")
 public class ClubsHistoricosEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
-    @Column(name = "ClubId", unique = true)
-    private Integer clubId;
+    @Column(name = "ClubId", unique = true, nullable = false)
+    private int clubId;
 
-    @Column(name = "Nombre", nullable = false, length = 50)
+    @Column(name = "Nombre", nullable = false)
     private String nombre;
 
-    @Column(name = "Abreviatura", nullable = false, length = 4)
-    private String abreviatura;
+    @Column(name = "Logo", nullable = false)
+    private String logo;
 
     @Column(name = "Puntuacion", nullable = false)
-    private Integer puntuacion;
+    private int puntuacion;
 
     @Column(name = "PartidosGanados", nullable = false)
-    private Integer partidosGanados;
+    private int partidosGanados;
 
     @Column(name = "PartidosPerdidos", nullable = false)
-    private Integer partidosPerdidos;
+    private int partidosPerdidos;
 
-    // La columna calculada no la mapeamos directamente
-    // pero podemos crear un método para calcularla cuando sea necesario
-    @Transient
-    public Integer getDiferenciaPartidos() {
-        return this.partidosGanados - this.partidosPerdidos;
-    }
-  
+    @Transient  // Como es calculado en SQL, no se almacena en la entidad
+    private int diferenciaPartidos;
 
 }
+
