@@ -11,6 +11,8 @@ interface Club {
   partidosPerdidos: number | null;
 }
 
+const apiOrigin = import.meta.env.VITE_API_URL || "http://localhost:8080";
+
 const pendingClubs: Club[] = clubNames.map((nombre, index) => ({
   id: -(index + 1), nombre, logo: null,
   puntuacion: null, partidosGanados: null, partidosPerdidos: null,
@@ -25,7 +27,7 @@ const OverallClassification = () => {
     const controller = new AbortController();
     const load = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/historicalclassification/", {
+        const response = await fetch(new URL("/api/historicalclassification/", apiOrigin), {
           signal: controller.signal,
         });
         if (!response.ok) throw new Error("Error cargando la clasificación");
@@ -73,7 +75,7 @@ const OverallClassification = () => {
               return (
                 <tr key={club.id}>
                   <td>{club.puntuacion === null ? "—" : index + 1}</td>
-                  <td>{club.logo ? <img src={club.logo} alt={`Escudo de ${club.nombre}`} className="historical-club-logo" /> : <span aria-label="Sin escudo">—</span>}</td>
+                  <td>{club.logo ? <img src={new URL(club.logo, apiOrigin).href} alt={`Escudo de ${club.nombre}`} className="historical-club-logo" /> : <span aria-label="Sin escudo">—</span>}</td>
                   <th scope="row">{club.nombre}</th>
                   <td className="historical-points">{club.puntuacion ?? "—"}</td>
                   <td>{club.partidosGanados ?? "—"}</td>
