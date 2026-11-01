@@ -95,6 +95,6 @@ INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados,
 SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Zyron Gaming', '', 0, 0, 0, 0
 WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Zyron Gaming'));
 INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados, PartidosPerdidos, DiferenciaPartidos)
-SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Business Truders', '', 0, 0, 0, 0
-WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Business Truders'));
+SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Business Tourers', '', 0, 0, 0, 0
+WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Business Tourers'));
 COMMIT;
