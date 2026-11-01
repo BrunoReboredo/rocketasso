@@ -38,7 +38,7 @@ const Navbar = () => {
       {isDropdownOpen && (
         <ul className="dropdown-menu">
           <li className="submenu" onMouseEnter={handleSubmenuToggle} onMouseLeave={handleSubmenuToggle}>
-            <div className="dropdown-item">RCK Season 2
+            <div className="dropdown-item">RCK season 3
               <img src={arrowRight} alt="Flecha abajo" className="dropdown-arrow" />
             </div>
             {isSubmenuOpen && (

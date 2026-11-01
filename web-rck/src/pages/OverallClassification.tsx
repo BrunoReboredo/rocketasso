@@ -1,78 +1,92 @@
 import { useEffect, useState } from "react";
-import Navbar from "../nav/Navbar";
 import "./OverallClassification.css";
+import clubNames from "../data/historicalClubs.json";
 
 interface Club {
   id: number;
-  clubId: number;
   nombre: string;
-  logo: string;
-  puntuacion: number;
-  partidosGanados: number;
-  partidosPerdidos: number;
-  diferenciaPartidos: number | null;
+  logo: string | null;
+  puntuacion: number | null;
+  partidosGanados: number | null;
+  partidosPerdidos: number | null;
 }
+
+const pendingClubs: Club[] = clubNames.map((nombre, index) => ({
+  id: -(index + 1), nombre, logo: null,
+  puntuacion: null, partidosGanados: null, partidosPerdidos: null,
+}));
 
 const OverallClassification = () => {
   const [clubs, setClubs] = useState<Club[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    // Verifica si la URL es la correcta, prueba con esta URL en tu navegador primero
-    console.log("Realizando la solicitud a la API...");
-
-    fetch("http://localhost:8080/api/clasificacion/")
-      .then((response) => {
-        console.log("Respuesta de la API recibida:", response);
-        if (!response.ok) {
-          // Verifica si la respuesta es exitosa
-          throw new Error("Error en la solicitud de la API");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log("Datos recibidos de la API:", data);
-        setClubs(data);
-      })
-      .catch((error) => {
-        console.error("Error cargando la clasificación:", error);
-      });
+    const controller = new AbortController();
+    const load = async () => {
+      try {
+        const response = await fetch("http://localhost:8080/api/historicalclassification/", {
+          signal: controller.signal,
+        });
+        if (!response.ok) throw new Error("Error cargando la clasificación");
+        const data: Club[] = response.status === 204 ? [] : await response.json();
+        setClubs(data.length === 0 ? pendingClubs : [...data].sort((a, b) =>
+          (b.puntuacion ?? 0) - (a.puntuacion ?? 0) ||
+          ((b.partidosGanados ?? 0) - (b.partidosPerdidos ?? 0)) - ((a.partidosGanados ?? 0) - (a.partidosPerdidos ?? 0)) ||
+          a.nombre.localeCompare(b.nombre, "es") || a.id - b.id
+        ));
+      } catch {
+        if (!controller.signal.aborted) { setError(true); setClubs(pendingClubs); }
+      } finally {
+        if (!controller.signal.aborted) setLoading(false);
+      }
+    };
+    void load();
+    return () => controller.abort();
   }, []);
-  
 
   return (
-    <div>
-      <Navbar />
-      <div className="classification-container">
-        <h1>Clasificación Histórica</h1>
-        <table className="classification-table">
+    <section className="historical-classification" aria-labelledby="historical-title">
+      <h1 id="historical-title">Clasificación histórica</h1>
+      <p className="historical-description">El recorrido de los clubes a lo largo de la RCK.</p>
+      <div className="historical-table-scroll" role="region" aria-label="Tabla de clasificación histórica" tabIndex={0}>
+        <table className="historical-table">
+          <caption>{error || clubs.some(club => club.puntuacion === null) ? "Clubes participantes · estadísticas pendientes de incorporar." : "Ordenada por puntos y diferencia de partidos ganados y perdidos."}</caption>
           <thead>
             <tr>
-              <th>Posición</th>
-              <th>Nombre Club</th>
-              <th>Logo</th>
-              <th>Puntos</th>
-              <th>PG</th>
-              <th>PP</th>
-              <th>Diferencia</th>
+              <th scope="col">Posición</th>
+              <th scope="col">Logo</th>
+              <th scope="col">Club</th>
+              <th scope="col">Puntos</th>
+              <th scope="col"><abbr title="Partidos ganados">PG</abbr></th>
+              <th scope="col"><abbr title="Partidos perdidos">PP</abbr></th>
+              <th scope="col">Diferencia</th>
             </tr>
           </thead>
           <tbody>
-            {clubs.map((club, index) => (
-              <tr key={club.id}>
-                <td>{index + 1}</td> {/* Columna de posición */}
-                <td>
-                  <img src={club.logo} alt={club.nombre} className="club-logo" /> {club.nombre}
-                </td>
-                <td>{club.puntuacion}</td>
-                <td>{club.partidosGanados}</td>
-                <td>{club.partidosPerdidos}</td>
-                <td>{club.diferenciaPartidos !== null ? club.diferenciaPartidos : "N/A"}</td> {/* Muestra N/A si diferencia es null */}
-              </tr>
-            ))}
+            {loading || clubs.length === 0 ? (
+              <tr><td colSpan={7} role="status">
+                {loading ? "Cargando clasificación…" : error ? "No se ha podido cargar la clasificación. Comprueba que la API esté disponible." : "Todavía no hay clubes en la clasificación histórica."}
+              </td></tr>
+            ) : clubs.map((club, index) => {
+              const difference = club.partidosGanados === null || club.partidosPerdidos === null ? null : club.partidosGanados - club.partidosPerdidos;
+              return (
+                <tr key={club.id}>
+                  <td>{club.puntuacion === null ? "—" : index + 1}</td>
+                  <td>{club.logo ? <img src={club.logo} alt={`Escudo de ${club.nombre}`} className="historical-club-logo" /> : <span aria-label="Sin escudo">—</span>}</td>
+                  <th scope="row">{club.nombre}</th>
+                  <td className="historical-points">{club.puntuacion ?? "—"}</td>
+                  <td>{club.partidosGanados ?? "—"}</td>
+                  <td>{club.partidosPerdidos ?? "—"}</td>
+                  <td>{difference === null ? "—" : difference > 0 ? `+${difference}` : difference}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
-    </div>
+      <p className="historical-key">PG: partidos ganados · PP: partidos perdidos · Diferencia: PG − PP</p>
+    </section>
   );
 };
 

@@ -1,24 +1,39 @@
-.classification-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .classification-table th,
-  .classification-table td {
-    padding: 8px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
-  
-  .classification-table th {
-    background-color: #f4f4f4;
-  }
-  
-  .club-logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  
+.historical-classification {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1150px;
+  padding: 40px 24px 90px;
+  color: #F3ECDD;
+}
+.historical-classification h1 {
+  color: #E58A2B;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin: 16px 0;
+}
+.historical-description { margin-bottom: 28px; }
+.historical-table-scroll {
+  overflow-x: auto;
+  border: 1px solid #626044;
+  border-radius: 12px;
+  background: #18251E;
+}
+.historical-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.historical-table caption {
+  padding: 12px;
+  font-size: 0.9rem;
+  color: #F3ECDD;
+}
+.historical-table thead { background: #E58A2B; color: #18251E; }
+.historical-table th, .historical-table td { padding: 14px 16px; text-align: center; }
+.historical-table tbody tr + tr { border-top: 1px solid #46513C; }
+.historical-table tbody tr:nth-child(even) { background: #30382A; }
+.historical-table tbody th { text-align: left; }
+.historical-table abbr { text-decoration: none; }
+.historical-club-logo { width: 40px; height: 40px; object-fit: contain; vertical-align: middle; }
+.historical-points { color: #D6B35A; font-weight: 700; }
+.historical-key { font-size: 0.85rem; color: #F3ECDD; }

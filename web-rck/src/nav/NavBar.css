@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #99C6DA;
+    background-color: #E58A2B;
     padding: 10px 20px;
     height: 60px;
     width: 100%;
@@ -17,7 +17,7 @@
 .dropdown-item {
   display: block;
   padding: 10px 20px;
-  color: #04174A;
+  color: #18251E;
   font-size: 14px;
   text-align: left;
   font-weight: bold;
@@ -63,7 +63,7 @@
   .navbar-links a, 
   .dropdown-item {
     text-decoration: none;
-    color: #04174A;
+    color: #18251E;
     display: block;
     padding: 10px 20px;
     font-size: 16px;
@@ -89,7 +89,7 @@
     top: 100%; /* Aparece justo debajo */
     left: 50%; /* Se alinea con el centro del contenedor padre */
     transform: translateX(-50%); /* Corrige la posición */
-    background-color: #BEB4E6;
+    background-color: #E58A2B;
     padding: 0; /* Reduce espacio interno */
     list-style: none;
     border-radius: 5px;
@@ -129,7 +129,7 @@
     position: absolute;
     top: 0;
     left: 100%; /* Hace que el submenú aparezca a la derecha */
-    background-color: #BEB4E6;
+    background-color: #E58A2B;
     padding: 10px 0;
     list-style: none;
     border-radius: 5px;
@@ -147,7 +147,7 @@
   }
   
   .submenu-menu li a {
-    color: #04174A;
+    color: #18251E;
     font-size: 14px;
     display: block;
   }
@@ -175,10 +175,10 @@
   }
   
   .social-icons svg {
-    color: #ffffff; /* Color blanco por defecto */
+    color: #18251E; /* Color blanco por defecto */
     transition: color 0.3s ease-in-out;
   }
   
   .social-icons svg:hover {
-    color: #1da1f2; /* Cambia el color en hover */
+    color: #30382A; /* Cambia el color en hover */
   }
