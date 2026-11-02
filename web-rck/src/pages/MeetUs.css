@@ -1,33 +1,15 @@
-.meet-us-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    padding-top: 21px;
-    
-  }
-  
-  .section {
-    width: max-content;
-    text-align: center;
-    margin-bottom: 0;
-  }
-  
-  /* Estilo para las preguntas */
-  .question-box {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 2px solid black;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #F8F8FF;
-  }
-  
-  /* Estilo para las respuestas */
-  .answer-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid black;
-    padding: 20px;
-    font-size: 1.2rem;
-    color: white;
-  }
+.meet-us-page { box-sizing: border-box; width: 100%; max-width: 1060px; padding: 60px 24px 110px; color: #F3ECDD; }
+.meet-us-heading { margin-bottom: 36px; }
+.meet-us-eyebrow { color: #D6B35A; font-weight: 700; font-size: .75rem; letter-spacing: .18em; }
+.meet-us-heading h1 { color: #E58A2B; font-size: clamp(2.5rem, 6vw, 3.8rem); margin: 10px 0 16px; }
+.meet-us-section { padding: 30px; border: 1px solid #786343; border-radius: 16px; background: #18251ef5; text-align: left; }
+.meet-us-section h2, .meet-us-team > h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); margin: 0 0 20px; color: #E58A2B; }
+.meet-us-section p { color: #dedbce; line-height: 1.9; font-size: 1.05rem; margin: 0; max-width: 850px; }
+.meet-us-team { text-align: left; margin-top: 36px; }
+.meet-us-person { display: flex; align-items: center; gap: 22px; padding: 28px; background: #18251ef5; border: 1px solid #626044; border-radius: 14px; }
+.meet-us-initials { display: grid; place-items: center; width: 72px; height: 72px; flex-shrink: 0; border: 1px solid #786343; border-radius: 50%; background: #30382A; color: #D6B35A; font-size: 1.5rem; font-weight: 800; }
+.meet-us-person-info { flex: 1; min-width: 0; }
+.meet-us-person h3 { font-size: 1.25rem; margin: 0 0 8px; }
+.meet-us-person p { margin: 0; color: #dedbce; }
+.meet-us-role { font-size: .8rem; font-weight: 800; color: #18251E; background: #E58A2B; padding: 7px 16px; border-radius: 20px; }
+@media (max-width: 580px) { .meet-us-page { padding-inline: 16px; } .meet-us-section { padding: 24px; } .meet-us-person { flex-wrap: wrap; padding: 22px; gap: 16px; } .meet-us-person-info { flex-basis: calc(100% - 90px); } .meet-us-role { margin-left: 88px; } }
