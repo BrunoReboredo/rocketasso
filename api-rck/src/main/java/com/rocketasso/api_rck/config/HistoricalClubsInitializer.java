@@ -7,7 +7,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.stereotype.Component;
 
-/** Incorpora clubes ausentes y sus escudos sin sobrescribir estadísticas. */
+/** Incorpora clubes, escudos y migraciones de puntos históricos verificadas. */
 @Component
 public class HistoricalClubsInitializer implements ApplicationRunner {
     private final DataSource dataSource;
@@ -23,6 +23,7 @@ public class HistoricalClubsInitializer implements ApplicationRunner {
         scripts.addScript(new ClassPathResource("db/historical-aliases.sql"));
         scripts.addScript(new ClassPathResource("db/historical-clubs.sql"));
         scripts.addScript(new ClassPathResource("db/historical-logos.sql"));
+        scripts.addScript(new ClassPathResource("db/historical-points.sql"));
         scripts.execute(dataSource);
     }
 }
