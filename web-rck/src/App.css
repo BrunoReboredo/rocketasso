@@ -71,16 +71,35 @@ h1 {
   text-align: center; /* Centra el texto */
 }
 
-/* Añadir fondo en la aplicación*/
-body {
+/* Capa fija independiente de la altura del documento. */
+html {
   background-color: #18251E;
-  color: #F3ECDD;
-  background-image: url('assets/fondo-topografico-otonal.png');
-
-  background-size: cover; /* Ajusta el tamaño para que cubra todo el ancho */
-  background-position: center top; /* Inicia desde arriba */
-  background-repeat: no-repeat; /* Fondo continuo sin repeticiones */
-  background-attachment: fixed; /* Efecto parallax */
-  min-height: 100vh; /* Asegura que cubra toda la pantalla */
 }
 
+body {
+  display: block;
+  min-height: 100vh;
+  background: #18251E;
+  color: #F3ECDD;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: #18251E url('./assets/fondo-topografico-otonal.png') center / cover no-repeat;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  height: auto;
+}
+
+.app-container {
+  width: 100%;
+}
