@@ -49,6 +49,7 @@ public class HistoricalClubsInitializer implements ApplicationRunner {
         scripts.addScript(new ClassPathResource("db/historical-matches-lsscosmos.sql"));
         scripts.addScript(new ClassPathResource("db/historical-matches-lastfivestars.sql"));
         scripts.addScript(new ClassPathResource("db/historical-matches-prodigyfive.sql"));
+        scripts.addScript(new ClassPathResource("db/historical-matches-karasub.sql"));
         scripts.execute(dataSource);
     }
 }
