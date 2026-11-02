@@ -31,3 +31,5 @@ UPDATE tclubshistoricos SET Logo = '/logos/clubs/VentuCorp%20Esports.png' WHERE 
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/VentuCorp%20Esports.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Ventucorp Spyriit');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Yayo%20is%20Back.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Yayo Is Back');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Zyron%20Gaming.jpg' WHERE LOWER(TRIM(Nombre)) = LOWER('Zyron Gaming');
+
+UPDATE tclubshistoricos SET Logo='/logos/clubs/Winx.png' WHERE LOWER(TRIM(Nombre))=LOWER('Winx');

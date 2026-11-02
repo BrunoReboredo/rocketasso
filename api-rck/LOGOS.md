@@ -13,3 +13,4 @@ React consulta por defecto `http://localhost:8080`. Se puede cambiar con `VITE_A
 Para comprobar un logo: `http://localhost:8080/logos/clubs/Atom%20Unity.png`.
 
 Los archivos de `sql/` permiten realizar la importación manual si fuera necesario. Los scripts incluidos en `src/main/resources/db/` son los utilizados por Spring al arrancar.
+Se conserva además Winx, presente en la base de datos anterior, con su logo recuperado del repositorio. La migración normaliza los alias antiguos y solo elimina sus duplicados vacíos; conserva las filas con estadísticas.

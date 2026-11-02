@@ -20,6 +20,7 @@ public class HistoricalClubsInitializer implements ApplicationRunner {
     public void run(ApplicationArguments args) {
         ResourceDatabasePopulator scripts = new ResourceDatabasePopulator();
         scripts.setSqlScriptEncoding("UTF-8");
+        scripts.addScript(new ClassPathResource("db/historical-aliases.sql"));
         scripts.addScript(new ClassPathResource("db/historical-clubs.sql"));
         scripts.addScript(new ClassPathResource("db/historical-logos.sql"));
         scripts.execute(dataSource);
