@@ -73,11 +73,13 @@ h1 {
 
 /* Añadir fondo en la aplicación*/
 body {
-  background-image: url('assets/fondo.png');
+  background-color: #18251E;
+  color: #F3ECDD;
+  background-image: url('assets/fondo-topografico-otonal.png');
 
   background-size: cover; /* Ajusta el tamaño para que cubra todo el ancho */
   background-position: center top; /* Inicia desde arriba */
-  background-repeat: repeat-y; /* Se repite verticalmente */
+  background-repeat: no-repeat; /* Fondo continuo sin repeticiones */
   background-attachment: fixed; /* Efecto parallax */
   min-height: 100vh; /* Asegura que cubra toda la pantalla */
 }
