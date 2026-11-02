@@ -9,6 +9,12 @@ public class NoticiaDto {
     private String subtitulo;
     private Timestamp fechaPublicacion;
 
+    private String foto;
+    private String enlace;
+    public String getFoto() { return foto; }
+    public void setFoto(String foto) { this.foto = foto; }
+    public String getEnlace() { return enlace; }
+    public void setEnlace(String enlace) { this.enlace = enlace; }
     // Getters y Setters
     public Long getId() {
         return id;

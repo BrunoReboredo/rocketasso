@@ -16,6 +16,7 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@org.springframework.web.bind.annotation.CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/noticias")
 public class NoticiasController {
@@ -42,8 +43,10 @@ public class NoticiasController {
         NoticiaDto dto = new NoticiaDto();
         dto.setId(noticia.getId());
         dto.setTitulo(noticia.getTitulo());
+        dto.setFoto(noticia.getFoto());
+        dto.setEnlace(noticia.getEnlace());
         dto.setContenido(noticia.getContenido());
-        dto.setFechaPublicacion(Timestamp.valueOf(noticia.getFechaPublicacion()));
+        dto.setFechaPublicacion(noticia.getFechaPublicacion() == null ? null : Timestamp.valueOf(noticia.getFechaPublicacion()));
         // Obtener el subtítulo como una corta parte del contenido
         dto.setSubtitulo(noticia.getContenido().length() > 100 ? noticia.getContenido().substring(0, 100) + "..." : noticia.getContenido());
         return dto;

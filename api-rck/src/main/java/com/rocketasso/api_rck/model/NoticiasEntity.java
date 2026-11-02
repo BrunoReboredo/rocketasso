@@ -27,6 +27,9 @@ public class NoticiasEntity {
     @Column(name = "FechaPublicacion", nullable = false, updatable = false)
     private LocalDateTime fechaPublicacion;
 
+    @Column(name = "Enlace", length = 500)
+    private String enlace;
+
     @PrePersist
     protected void onCreate() {
         fechaPublicacion = LocalDateTime.now();

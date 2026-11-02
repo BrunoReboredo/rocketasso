@@ -1,97 +1,19 @@
-.news-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  
-  text-align: center;
-  margin-top: 5px; /* Espacio debajo del navbar */
-  margin-bottom: 1rem;
-}
-
-.div.content {
-  width: 100%;
-}
-
-.news-header h1 {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  text-align:  center;
-  color: #FFFAF0;
-}
-
-.news-header h2 {
-  font-size: 1.5rem;
-  color: #F8F8FF;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-/* Línea divisoria ocupa toda la pantalla */
-.news-divider {
-  width: 100%;
-  height: 2px;
-  background-color: #ffd700;
-  justify-content: center;
-  border: none;
-  margin: 5px auto;
-}
-
-/* Contenedor de noticias */
-.news-list {
-  width: 100vw; /* Ocupar todo el ancho de la ventana */
-  height: 100%; /* Ocupar todo el alto disponible */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño flexible */
-  gap: 1.1rem;
-  padding: 1rem;
-  box-sizing: border-box; /* Evita que el padding afecte el tamaño */
-}
-
-
-/* Cada noticia como un enlace */
-.news-item {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Tarjeta de noticia */
-.news-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Distribuye los elementos */
-  align-items: center;
-  justify-content: center;
-  background-color: #F0FFFF;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-  height: 225px; /* Ajusta según necesidad */
-}
-
-.news-box:hover {
-  transform: scale(1.05);
-}
-
-/* Imagen de la noticia */
-.news-image {
-  width: 100%;
-  height: 150px; /* Ajusta el tamaño según necesidad */
-  object-fit: cover;
-  display: block;
-}
-
-/* Título de la noticia */
-.news-title {
-  flex-grow: 1; /* Hace que el título se expanda dentro del contenedor */
-  display: flex;
-  align-items: center; /* Centra el texto verticalmente */
-  justify-content: center;
-  padding: 1rem;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #333;
-}
+.news-page { box-sizing: border-box; width: 100%; max-width: 1160px; padding: 60px 24px 110px; color: #F3ECDD; }
+.news-header { text-align: center; margin-bottom: 28px; }
+.news-header h1 { color: #E58A2B; font-size: clamp(2.4rem, 5vw, 3.5rem); margin: 12px 0; }
+.news-header p { color: #d8d5c7; }
+.news-divider { border: 0; height: 1px; background: #786343; margin: 0 0 32px; }
+.news-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr)); gap: 24px; }
+.news-box { max-width: 530px; overflow: hidden; border-radius: 14px; border: 1px solid #626044; background: #18251ef5; box-shadow: 0 12px 30px #0004; }
+.news-image-wrap { height: 205px; background: #30382A; }
+.news-image { display: block; height: 100%; width: 100%; object-fit: cover; }
+.news-image-brand { background: radial-gradient(ellipse at center, #756039, #18251E); padding: 28px; box-sizing: border-box; }
+.news-image-brand .news-image { object-fit: contain; }
+.news-body { padding: 24px; text-align: left; }
+.news-tag { color: #D6B35A; text-transform: uppercase; letter-spacing: .1em; font-size: .7rem; font-weight: 700; }
+.news-title { margin: 12px 0; font-size: 1.6rem; line-height: 1.3; color: #F3ECDD; }
+.news-summary { line-height: 1.7; color: #dedbce; white-space: pre-line; }
+.news-link { display: inline-block; color: #18251E; background: #E58A2B; border-radius: 6px; padding: 10px 16px; margin-top: 10px; font-weight: 700; }
+.news-link:hover { background: #D6B35A; color: #18251E; }
+.news-link:focus-visible { outline: 3px solid #F3ECDD; outline-offset: 4px; }
+.news-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
