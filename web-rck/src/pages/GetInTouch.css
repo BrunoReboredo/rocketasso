@@ -26,3 +26,19 @@
 .contact-follow-links a:hover { border-color: #E58A2B; color: #E58A2B; }
 .contact-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 @media (max-width: 650px) { .contact-channels { grid-template-columns: 1fr; } .contact-page { padding-inline: 16px; } .contact-card { padding: 24px; } }
+.contact-networks { margin-bottom: 36px; text-align: left; }
+.contact-networks h2 { font-size: 1.5rem; margin: 0 0 8px; }
+.contact-networks > p { color: #dedbce; margin: 0 0 20px; }
+.contact-network-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.contact-network { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 22px; border: 1px solid #626044; border-radius: 12px; background: #18251ef5; color: #F3ECDD; }
+.contact-network > svg { color: #E58A2B; font-size: 1.8rem; margin-bottom: 4px; }
+.contact-network strong { font-size: 1.1rem; }
+.contact-network > span { color: #dedbce; font-size: .8rem; line-height: 1.5; }
+a.contact-network:hover { color: #F3ECDD; border-color: #E58A2B; background: #30382A; }
+.contact-channels .contact-card-label { margin-top: 0; }
+.contact-buttons { display: grid; gap: 10px; }
+.contact-action-secondary { background: transparent; border: 1px solid #786343; color: #F3ECDD; justify-content: center; }
+.contact-email { overflow-wrap: anywhere; font-size: .8rem; color: #dedbce; margin: 12px 0 0; }
+.contact-join-note { color: #dedbce; font-size: .85rem; line-height: 1.7; margin: 0 0 22px; }
+@media (max-width: 800px) { .contact-network-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 400px) { .contact-network { padding: 16px; } }
