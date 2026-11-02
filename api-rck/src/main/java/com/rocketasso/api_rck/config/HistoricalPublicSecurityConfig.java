@@ -12,10 +12,10 @@ public class HistoricalPublicSecurityConfig {
     @Bean
     @Order(1)
     SecurityFilterChain historicalPublicResources(HttpSecurity http) throws Exception {
-        return http.securityMatcher("/logos/clubs/**", "/api/historicalclassification/**")
+        return http.securityMatcher("/logos/clubs/**", "/api/historicalclassification/**", "/api/hall-of-fame", "/api/hall-of-fame/**")
             .cors(cors -> {})
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers(HttpMethod.GET, "/logos/clubs/**", "/api/historicalclassification/**").permitAll()
+                .requestMatchers(HttpMethod.GET, "/logos/clubs/**", "/api/historicalclassification/**", "/api/hall-of-fame", "/api/hall-of-fame/**").permitAll()
                 .anyRequest().denyAll())
             .build();
     }

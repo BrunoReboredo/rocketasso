@@ -1,0 +1,21 @@
+.hall-of-fame { box-sizing: border-box; width: 100%; max-width: 1160px; padding: 60px 24px 110px; color: #F3ECDD; }
+.hall-heading { margin-bottom: 42px; }
+.hall-eyebrow { color: #D6B35A; font-size: .75rem; font-weight: 700; letter-spacing: .24em; }
+.hall-heading h1 { color: #E58A2B; font-size: clamp(2.5rem, 6vw, 4rem); margin: 10px 0; }
+.hall-heading > p:last-child { color: #d8d5c7; }
+.hall-champions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.hall-champion { position: relative; overflow: hidden; border: 1px solid #786343; border-radius: 16px; background: linear-gradient(145deg, #30382af2, #14221bf5); box-shadow: 0 16px 40px #0005; }
+.hall-season { display: flex; align-items: center; justify-content: center; gap: 14px; background: #E58A2B; color: #18251E; padding: 12px 20px; font-size: .75rem; font-weight: 800; letter-spacing: .12em; }
+.hall-season strong { font-size: 1.8rem; line-height: 1; }
+.hall-champion-body { padding: 22px 24px 32px; }
+.hall-crown { color: #D6B35A; font-size: .8rem; font-weight: 700; letter-spacing: .2em; margin: 0 0 12px; }
+.hall-crown span { font-size: 1.6rem; vertical-align: middle; }
+.hall-logo { width: 150px; height: 150px; object-fit: contain; filter: drop-shadow(0 8px 16px #0005); }
+.hall-champion h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 16px 0 6px; }
+.hall-event { color: #d8d5c7; font-size: .85rem; margin: 0; }
+.hall-roster { border-top: 1px solid #626044; margin-top: 26px; padding-top: 18px; }
+.hall-roster h3 { font-size: .7rem; text-transform: uppercase; letter-spacing: .16em; color: #D6B35A; margin: 0 0 14px; }
+.hall-roster ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 0; margin: 0; list-style: none; }
+.hall-roster li { background: #101c17; border: 1px solid #46513c; border-radius: 6px; padding: 7px 12px; font-size: .85rem; }
+.hall-status button { background: #E58A2B; color: #18251E; font-weight: 700; }
+@media (max-width: 720px) { .hall-champions { grid-template-columns: 1fr; } .hall-of-fame { padding-inline: 16px; } }
