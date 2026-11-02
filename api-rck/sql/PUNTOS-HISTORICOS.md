@@ -28,7 +28,7 @@ Fuente: imágenes de clasificación final facilitadas por el organizador. Los gu
 | Team NES | 8 | 0 | 8 |
 | Team Orion | 71 | 0 | 71 |
 | The Thunders | 0 | 16 | 16 |
-| Thouphant | 0 | 18 | 18 |
+| Thuphant | 0 | 18 | 18 |
 | Ultra Instinct | 0 | 43 | 43 |
 | Varions Esports | 99 | 55 | 154 |
 | Ventucorp Esports | 31 | 95 | 126 |

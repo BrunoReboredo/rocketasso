@@ -23,7 +23,7 @@ UPDATE tclubshistoricos SET Logo = '/logos/clubs/Team%20Gmask.png' WHERE LOWER(T
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Tean%20NES.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Team NES');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Team%20Orion.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Team Orion');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/The%20Thunders.png' WHERE LOWER(TRIM(Nombre)) = LOWER('The Thunders');
-UPDATE tclubshistoricos SET Logo = '/logos/clubs/Thuphant.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Thouphant');
+UPDATE tclubshistoricos SET Logo = '/logos/clubs/Thuphant.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Thuphant');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Ultra%20Instinct.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Ultra Instinct');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Varions%20Esports.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Varions Esports');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/VentuCorp%20Esports.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Ventucorp Esports');

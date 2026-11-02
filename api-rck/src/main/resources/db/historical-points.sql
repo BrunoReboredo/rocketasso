@@ -27,7 +27,7 @@ UPDATE tclubshistoricos SET Puntuacion=111 WHERE LOWER(TRIM(Nombre))=LOWER('Team
 UPDATE tclubshistoricos SET Puntuacion=8 WHERE LOWER(TRIM(Nombre))=LOWER('Team NES') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=71 WHERE LOWER(TRIM(Nombre))=LOWER('Team Orion') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=16 WHERE LOWER(TRIM(Nombre))=LOWER('The Thunders') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
-UPDATE tclubshistoricos SET Puntuacion=18 WHERE LOWER(TRIM(Nombre))=LOWER('Thouphant') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
+UPDATE tclubshistoricos SET Puntuacion=18 WHERE LOWER(TRIM(Nombre))=LOWER('Thuphant') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=43 WHERE LOWER(TRIM(Nombre))=LOWER('Ultra Instinct') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=154 WHERE LOWER(TRIM(Nombre))=LOWER('Varions Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=126 WHERE LOWER(TRIM(Nombre))=LOWER('Ventucorp Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');

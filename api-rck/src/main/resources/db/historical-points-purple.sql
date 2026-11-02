@@ -51,8 +51,8 @@ UPDATE tclubshistoricos SET Puntuacion=8 WHERE LOWER(TRIM(Nombre))=LOWER('Team N
 UPDATE tclubshistoricos SET Puntuacion=71 WHERE LOWER(TRIM(Nombre))=LOWER('Team Orion') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
 -- The Thunders : S1 0 + S2 0 = 0
 UPDATE tclubshistoricos SET Puntuacion=0 WHERE LOWER(TRIM(Nombre))=LOWER('The Thunders') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
--- Thouphant : S1 0 + S2 18 = 18
-UPDATE tclubshistoricos SET Puntuacion=18 WHERE LOWER(TRIM(Nombre))=LOWER('Thouphant') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
+-- Thuphant : S1 0 + S2 18 = 18
+UPDATE tclubshistoricos SET Puntuacion=18 WHERE LOWER(TRIM(Nombre))=LOWER('Thuphant') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
 -- Ultra Instinct : S1 0 + S2 14 = 14
 UPDATE tclubshistoricos SET Puntuacion=14 WHERE LOWER(TRIM(Nombre))=LOWER('Ultra Instinct') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
 -- Varions Esports : S1 99 + S2 18 = 117

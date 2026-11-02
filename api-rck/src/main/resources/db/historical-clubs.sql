@@ -71,8 +71,8 @@ INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados,
 SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'The Thunders', '', 0, 0, 0, 0
 WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('The Thunders'));
 INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados, PartidosPerdidos, DiferenciaPartidos)
-SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Thouphant', '', 0, 0, 0, 0
-WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Thouphant'));
+SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Thuphant', '', 0, 0, 0, 0
+WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Thuphant'));
 INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados, PartidosPerdidos, DiferenciaPartidos)
 SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Ultra Instinct', '', 0, 0, 0, 0
 WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Ultra Instinct'));
