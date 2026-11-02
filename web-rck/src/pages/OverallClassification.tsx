@@ -88,6 +88,7 @@ const OverallClassification = () => {
         </table>
       </div>
       <p className="historical-key">PG: partidos ganados · PP: partidos perdidos · Diferencia: PG − PP</p>
+      <p className="historical-key">Los partidos ganados y perdidos no incluyen Última Oportunidad ni las RCK Finals.</p>
     </section>
   );
 };
