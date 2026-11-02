@@ -22,8 +22,8 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/meet-us" element={<MeetUs />} />
             <Route path="/contact" element={<GetInTouch />} />
-            <Route path="/competition/season2/calendar" element={<Calendar />} />
-            <Route path="/competition/season2/classification" element={<Classification />} />
+            <Route path="/competition/season3/calendar" element={<Calendar />} />
+            <Route path="/competition/season3/classification" element={<Classification />} />
             <Route path="/competition/hall-of-fame" element={<HallOfFame />} />
             <Route path="/competition/overall-classification" element={<OverallClassification />} />
           </Routes>

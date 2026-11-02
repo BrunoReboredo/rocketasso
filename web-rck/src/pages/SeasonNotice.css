@@ -1,0 +1,7 @@
+.season-notice { box-sizing: border-box; width: 100%; max-width: 850px; padding: 70px 24px 110px; color: #F3ECDD; }
+.season-notice-label { color: #D6B35A; font-size: .8rem; font-weight: 700; letter-spacing: .15em; }
+.season-notice h1 { color: #E58A2B; font-size: clamp(2rem, 5vw, 3rem); margin: 14px 0 32px; }
+.season-notice-card { padding: 32px 24px; border: 1px solid #786343; border-radius: 16px; background: #18251ef2; }
+.season-notice-card h2 { color: #E58A2B; font-size: 1.5rem; margin-top: 0; }
+.season-notice-card p { line-height: 1.7; }
+.season-notice-card p:last-child { color: #D6B35A; margin-bottom: 0; }

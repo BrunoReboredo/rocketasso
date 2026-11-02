@@ -43,8 +43,8 @@ const Navbar = () => {
             </div>
             {isSubmenuOpen && (
               <ul className="submenu-menu">
-                <li><Link to="/competition/season2/calendar">Calendario</Link></li>
-                <li><Link to="/competition/season2/classification">Clasificación</Link></li>
+                <li><Link to="/competition/season3/calendar">Calendario</Link></li>
+                <li><Link to="/competition/season3/classification">Clasificación</Link></li>
               </ul>
             )}
           </li>
