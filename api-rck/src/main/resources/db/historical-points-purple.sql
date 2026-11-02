@@ -29,8 +29,8 @@ UPDATE tclubshistoricos SET Puntuacion=0 WHERE LOWER(TRIM(Nombre))=LOWER('Last F
 UPDATE tclubshistoricos SET Puntuacion=39 WHERE LOWER(TRIM(Nombre))=LOWER('LSS Cosmos') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
 -- LSS Prime : S1 45 + S2 0 = 45
 UPDATE tclubshistoricos SET Puntuacion=45 WHERE LOWER(TRIM(Nombre))=LOWER('LSS Prime') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
--- Lumyind Esports : S1 -7 + S2 0 = -7
-UPDATE tclubshistoricos SET Puntuacion=-7 WHERE LOWER(TRIM(Nombre))=LOWER('Lumyind Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
+-- Lumynid Esports : S1 -7 + S2 0 = -7
+UPDATE tclubshistoricos SET Puntuacion=-7 WHERE LOWER(TRIM(Nombre))=LOWER('Lumynid Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
 -- Madness Esports : S1 0 + S2 34 = 34
 UPDATE tclubshistoricos SET Puntuacion=34 WHERE LOWER(TRIM(Nombre))=LOWER('Madness Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-purple-20261102');
 -- Moonlab Deimos : S1 0 + S2 14 = 14

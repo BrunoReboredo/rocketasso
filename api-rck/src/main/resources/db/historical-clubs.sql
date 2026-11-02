@@ -38,8 +38,8 @@ INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados,
 SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'LSS Prime', '', 0, 0, 0, 0
 WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('LSS Prime'));
 INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados, PartidosPerdidos, DiferenciaPartidos)
-SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Lumyind Esports', '', 0, 0, 0, 0
-WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Lumyind Esports'));
+SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Lumynid Esports', '', 0, 0, 0, 0
+WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Lumynid Esports'));
 INSERT INTO tclubshistoricos (ClubId, Nombre, Logo, Puntuacion, PartidosGanados, PartidosPerdidos, DiferenciaPartidos)
 SELECT (SELECT COALESCE(MAX(c.ClubId), 0) + 1 FROM tclubshistoricos c), 'Madness Esports', '', 0, 0, 0, 0
 WHERE NOT EXISTS (SELECT 1 FROM tclubshistoricos WHERE LOWER(TRIM(Nombre)) = LOWER('Madness Esports'));

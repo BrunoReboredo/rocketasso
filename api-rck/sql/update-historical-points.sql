@@ -16,7 +16,7 @@ UPDATE tclubshistoricos SET Puntuacion=37 WHERE LOWER(TRIM(Nombre))=LOWER('Last 
 UPDATE tclubshistoricos SET Puntuacion=8 WHERE LOWER(TRIM(Nombre))=LOWER('Last Five Titans') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=39 WHERE LOWER(TRIM(Nombre))=LOWER('LSS Cosmos') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=45 WHERE LOWER(TRIM(Nombre))=LOWER('LSS Prime') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
-UPDATE tclubshistoricos SET Puntuacion=-7 WHERE LOWER(TRIM(Nombre))=LOWER('Lumyind Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
+UPDATE tclubshistoricos SET Puntuacion=-7 WHERE LOWER(TRIM(Nombre))=LOWER('Lumynid Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=71 WHERE LOWER(TRIM(Nombre))=LOWER('Madness Esports') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=59 WHERE LOWER(TRIM(Nombre))=LOWER('Moonlab Deimos') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');
 UPDATE tclubshistoricos SET Puntuacion=74 WHERE LOWER(TRIM(Nombre))=LOWER('Moonlab Galaxy') AND NOT EXISTS (SELECT 1 FROM rck_data_migrations WHERE version='historical-points-s1-s2-20261102');

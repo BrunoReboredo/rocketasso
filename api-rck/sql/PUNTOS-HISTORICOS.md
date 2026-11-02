@@ -17,7 +17,7 @@ Fuente: imágenes de clasificación final facilitadas por el organizador. Los gu
 | Last Five Titans | 0 | 8 | 8 |
 | LSS Cosmos | 39 | 0 | 39 |
 | LSS Prime | 45 | 0 | 45 |
-| Lumyind Esports | -7 | 0 | -7 |
+| Lumynid Esports | -7 | 0 | -7 |
 | Madness Esports | 0 | 71 | 71 |
 | Moonlab Deimos | 0 | 59 | 59 |
 | Moonlab Galaxy | 74 | 0 | 74 |

@@ -12,7 +12,7 @@ UPDATE tclubshistoricos SET Logo = '/logos/clubs/Last%20Five%20Stars.png' WHERE 
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Last%20Five%20Stars.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Last Five Titans');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Last%20Five%20Stars.png' WHERE LOWER(TRIM(Nombre)) = LOWER('LSS Cosmos');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Last%20Five%20Stars.png' WHERE LOWER(TRIM(Nombre)) = LOWER('LSS Prime');
-UPDATE tclubshistoricos SET Logo = '/logos/clubs/Lumyind%20Esports.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Lumyind Esports');
+UPDATE tclubshistoricos SET Logo = '/logos/clubs/Lumyind%20Esports.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Lumynid Esports');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/MADNESS%20ESPORTS.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Madness Esports');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Moonlab%20Gaming.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Moonlab Deimos');
 UPDATE tclubshistoricos SET Logo = '/logos/clubs/Moonlab%20Gaming.png' WHERE LOWER(TRIM(Nombre)) = LOWER('Moonlab Galaxy');
